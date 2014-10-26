@@ -1,0 +1,104 @@
+// vim:ts=4:sw=4:et
+{
+    // splitv split container with 2 children
+    "border": "normal",
+    "floating": "auto_off",
+    "layout": "splitv",
+    "percent": 0.5,
+    "type": "con",
+    "nodes": [
+        {
+            "border": "normal",
+            "floating": "auto_off",
+            "geometry": {
+               "height": 607,
+               "width": 1280,
+               "x": 4294967294,
+               "y": 0
+            },
+            "name": "HTOP",
+            "percent": 0.5,
+            "swallows": [
+               {
+                "class": "^Terminator$",
+//                "instance": "^terminator$",
+                "title": "^/usr/bin/htop$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            // tabbed split container with 2 children
+            "border": "normal",
+            "floating": "auto_off",
+            "layout": "tabbed",
+            "percent": 0.5,
+            "type": "con",
+            "nodes": [
+                {
+                    "border": "normal",
+                    "floating": "auto_off",
+                    "geometry": {
+                       "height": 427,
+                       "width": 642,
+                       "x": 0,
+                       "y": 0
+                    },
+                    "name": "/usr/bin/ranger",
+                    "percent": 0.5,
+                    "swallows": [
+                       {
+                        "class": "^Terminator$",
+                        "instance": "^terminator$",
+                        "title": "^\\/usr\\/bin\\/ranger$"
+                       }
+                    ],
+                    "type": "con"
+                },
+                {
+                    "border": "normal",
+                    "floating": "auto_off",
+                    "geometry": {
+                       "height": 427,
+                       "width": 642,
+                       "x": 0,
+                       "y": 0
+                    },
+                    "name": "dave@dave-PBL21: ~",
+                    "percent": 0.5,
+                    "swallows": [
+                       {
+                        "class": "^X\\-terminal\\-emulator$",
+                        "instance": "^x\\-terminal\\-emulator$",
+                        "title": "^dave\\@dave\\-PBL21\\:\\ \\~$"
+                       }
+                    ],
+                    "type": "con"
+                }
+            ]
+        }
+    ]
+}
+
+{
+    "border": "normal",
+    "floating": "auto_off",
+    "geometry": {
+       "height": 1012,
+       "width": 1916,
+       "x": 2,
+       "y": 47
+    },
+    "name": "i3: Layout saving in i3 - Google Chrome",
+    "percent": 0.5,
+    "swallows": [
+       {
+        "class": "^Google\\-chrome$",
+        "instance": "^Google\\-chrome$",
+       // "title": "^i3\\:\\ Layout\\ saving\\ in\\ i3\\ \\-\\ Google\\ Chrome$",
+        "window_role": "^browser$"
+       }
+    ],
+    "type": "con"
+}
+
